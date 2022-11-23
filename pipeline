@@ -3,20 +3,20 @@ Agent any
 Stages {
 Stage ("check validate") {
 Steps {
-Echo "I am Validating the code"
+Echo ("I am Validating the code")
 } }
 Stage("Compilation") {
 Steps {
-Echo "I am Compiling the code"
+Echo ("I am Compiling the code")
 } }
 Stage("Install") {
 Steps {
-Echo "I am Installing the code"
+Echo ("I am Installing the code")
 } }
 Stage("Deploy")
 {
 Steps {
-Echo "I am Deploying the code"
+Echo ("I am Deploying the code")
 }
 }
 }
