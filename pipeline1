@@ -15,12 +15,12 @@ pipeline {
             stages {
         stage('install')
             steps {
-                echo 'i am installing the code')
+                echo 'i am installing the code'
             }
             stages {
         stage('deploy')
             steps {
-                echo 'i am deploying the code')
+                echo 'i am deploying the code'
             }
     }
 }
