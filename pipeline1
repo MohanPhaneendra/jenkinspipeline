@@ -8,7 +8,7 @@ stages {
                 echo 'i am validating the code'
         }
       }
-       stages
+       Stages
        {
         stage('compile')
             steps
@@ -16,7 +16,7 @@ stages {
                 echo 'i am compiling the code'
             }
         }  
-            stages
+            Stages
           {
              stage('install')
               steps
@@ -24,7 +24,7 @@ stages {
                 echo 'i am installing the code'
             }
           } 
-            stages
+            Stages
             {
                stage('deploy')
                steps
