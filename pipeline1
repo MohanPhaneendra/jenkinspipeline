@@ -1,36 +1,32 @@
 pipeline {
 agent any
 Stages {
-     stage('Validate')
-     {
-       steps
-       {
-                echo 'i am validating the code'
-        }
-      }
-       Stages
-       {
-        stage('compile')
-            steps
-            {
-                echo 'i am compiling the code'
-            }
-        }  
-            Stages
-          {
-             stage('install')
-              steps
-            {
-                echo 'i am installing the code'
-            }
-          } 
-            Stages
-            {
-               stage('deploy')
-               steps
-               {
-                echo 'i am deploying the code'
-              }
-            }  
-    }
+stage('Validate')
+{
+   steps
+{
+   echo 'i am validating the code'
+}}
+Stages
+{
+   stage('compile')
+   steps
+{
+  echo 'i am compiling the code'
+}}  
+Stages
+{
+  stage('install')
+   steps
+{
+   echo 'i am installing the code'
+}} 
+Stages
+{
+  stage('deploy')
+   steps
+{
+   echo 'i am deploying the code'
+}}  
+}
 }
